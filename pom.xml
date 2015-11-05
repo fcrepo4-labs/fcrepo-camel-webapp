@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.fcrepo.camel</groupId>
     <artifactId>fcrepo-camel-toolbox</artifactId>
-    <version>4.3.1-SNAPSHOT</version>
+    <version>4.4.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>fcrepo-camel-webapp</artifactId>
@@ -30,6 +30,7 @@
     <!--Fixity Service-->
     <fs.profile />
 
+    <fcrepo-camel-toolbox.version>4.4.0</fcrepo-camel-toolbox.version>
     <build.profile.names>${at.profile}${is.profile}${it.profile}${rs.profile}${fs.profile}</build.profile.names>
   </properties>
 
@@ -113,7 +114,7 @@
         <dependency>
           <groupId>${project.groupId}</groupId>
           <artifactId>fcrepo-audit-triplestore</artifactId>
-          <version>${project.version}</version>
+          <version>${fcrepo-camel-toolbox.version}</version>
         </dependency>
       </dependencies>
     </profile>
@@ -128,7 +129,7 @@
         <dependency>
           <groupId>${project.groupId}</groupId>
           <artifactId>fcrepo-indexing-solr</artifactId>
-          <version>${project.version}</version>
+          <version>${fcrepo-camel-toolbox.version}</version>
         </dependency>
       </dependencies>
     </profile>
@@ -143,7 +144,7 @@
         <dependency>
           <groupId>${project.groupId}</groupId>
           <artifactId>fcrepo-indexing-triplestore</artifactId>
-          <version>${project.version}</version>
+          <version>${fcrepo-camel-toolbox.version}</version>
         </dependency>
       </dependencies>
     </profile>
@@ -158,7 +159,7 @@
         <dependency>
           <groupId>${project.groupId}</groupId>
           <artifactId>fcrepo-reindexing</artifactId>
-          <version>${project.version}</version>
+          <version>${fcrepo-camel-toolbox.version}</version>
         </dependency>
       </dependencies>
     </profile>
@@ -173,7 +174,7 @@
         <dependency>
           <groupId>${project.groupId}</groupId>
           <artifactId>fcrepo-fixity</artifactId>
-          <version>${project.version}</version>
+          <version>${fcrepo-camel-toolbox.version}</version>
         </dependency>
       </dependencies>
     </profile>
